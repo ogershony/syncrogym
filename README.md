@@ -1,5 +1,5 @@
 # Syncrogym
-### **An easy to use Web Server to synchronize gym times with your friends/family.**
+### * **An easy to use Web Server to synchronize gym times with your friends/family.** *
 
 ## About Syncrogym
 Syncrogym was created by Oren Gershony and Bryton Lin as a result of poor coordination and timing when it came to working out. Oftentimes, they worked out without each other, because they weren't sure if the other person was available, decreasing motivation and overall performance at the gym. Syncrogym arose out of the necessity to fix this problem. By being able to schedule when they could work out together, it made working out a lot more fun. Oren and Bryton are both sophomores at Eastlake High School, and are looking to enter CS and Medicine fields respectively in the future.
