@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block main %}
+    <script src='static/js/blog.js'></script>
+    <link rel="stylesheet" href="/static/css/blog.css" />
+    <br>
+    <div class='center' id='create'><input type='submit' value='+ Create New Post' class='create' onclick='createPost();'></div>
+    <br>
+    <div class='center' id='createPost'>
+    </div>
+    <h1 class='center'>Blog</h1>
+    <div id='blogs'>
+    </div>
+{% endblock %}

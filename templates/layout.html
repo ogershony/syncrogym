@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="/static/css/layoutstyle.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src='/static/js/layout.js'></script>
+   <title>Syncrogym</title>
+   <style>
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        a {
+        text-decoration: none;
+        }
+        li {
+        list-style: none;
+        }
+   </style>
+ </head>
+ <body style='background-color:white;'>
+   <nav class="navbar">
+     <div><a href='/'><img class="logo" src='/static/img/logo_index.PNG'></a></div>
+     <ul class="nav-links">
+       <div class="menu">
+         <li><a href="/friends">Friends</a></li>
+         <li><a href="/schedule">Schedule</a></li>
+         <li><a href="/tips">Tips</a></li>
+         <li><a href="/blog">Blog</a></li>
+         <li><a href='/about'>About Us</a></li>
+         {% if not session["username"] %}
+            <li><a href="/login">Login</a></li>
+         {% endif %}
+         {% if session["username"] %}
+            <li><a href="/" onclick = "logout();">Logout</a></li>
+         {% endif %}
+       </div>
+     </ul>
+   </nav>
+   {% block main %}{% endblock %}
+ </body>
+</html>

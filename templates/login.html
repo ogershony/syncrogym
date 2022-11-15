@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block main %}
+    <script src='/static/js/login.js'></script>
+    <h1 class='center'>Login</h1>
+    <div class='center'>
+        <label for='username'>Username</label><br>
+        <input type="text" id="username"><br>
+        <label for='password'>Password</label><br>
+        <input type="password" id="password"><br>
+        <input type='submit' value='Login' onclick='login();'>
+        <p style='color:red' id='login_alert'></p>
+    </div>
+    <h1 class='center'>Create Account</h1>
+    <div class='center'>
+        <label for='cusername'>Username</label><br>
+        <input type="text" id="cusername"><br>
+        <label for='cpassword'>Password</label><br>
+        <input type="password" id="cpassword"><br>
+        <label for='cpassword2'>Confirm Password</label><br>
+        <input type="password" id="cpassword2"><br>
+        <input type='submit' value='Create Account' onclick='create();'>
+        <p style='color:red' id='create_alert'></p>
+    </div>
+{% endblock %}

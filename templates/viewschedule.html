@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+{% block main %}
+<script src='/static/js/renderschedule.js'></script>
+<script src='/static/js/viewschedule.js'></script>
+<link rel="stylesheet" href="/static/css/schedule.css" />
+<h1 class='center'>My Schedule</h1>
+<table>
+    <tr>
+        <th></th>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+    </tr>
+    <tr>
+        <th>Times</th>
+        <th><input type='time' id='Sunday_time1'><p>to</p><input type='time' id='Sunday_time2'></th>
+        <th><input type='time' id='Monday_time1'><p>to</p><input type='time' id='Monday_time2'></th>
+        <th><input type='time' id='Tuesday_time1'><p>to</p><input type='time' id='Tuesday_time2'></th>
+        <th><input type='time' id='Wednesday_time1'><p>to</p><input type='time' id='Wednesday_time2'></th>
+        <th><input type='time' id='Thursday_time1'><p>to</p><input type='time' id='Thursday_time2'></th>
+        <th><input type='time' id='Friday_time1'><p>to</p><input type='time' id='Friday_time2'></th>
+        <th><input type='time' id='Saturday_time1'><p>to</p><input type='time' id='Saturday_time2'></th>
+    </tr>
+    <tr>
+        <th>Location</th>
+        <th>
+            <select id='Sunday_select'>
+                <option value='Other'>Other</option>
+                <option value='24 Hour Fitness'>24 Hour Fitness</option>
+                <option value='425 Fitness'>425 Fitness</option>
+                <option value="Gold's Gym">Gold's Gym</option>
+                <option value='Orange Theory'>Orange Theory</option>
+                <option value='Planet Fitness'>Planet Fitness</option>
+            </select><br>
+            <input value='Other' id='Sunday_other'>
+        </th>
+        <th>
+            <select id='Monday_select'>
+                <option value='Other'>Other</option>
+                <option value='24 Hour Fitness'>24 Hour Fitness</option>
+                <option value='425 Fitness'>425 Fitness</option>
+                <option value="Gold's Gym">Gold's Gym</option>
+                <option value='Orange Theory'>Orange Theory</option>
+                <option value='Planet Fitness'>Planet Fitness</option>
+            </select><br>
+            <input value='Other' id='Monday_other'>
+        </th>
+        <th>
+            <select id='Tuesday_select'>
+                <option value='Other'>Other</option>
+                <option value='24 Hour Fitness'>24 Hour Fitness</option>
+                <option value='425 Fitness'>425 Fitness</option>
+                <option value="Gold's Gym">Gold's Gym</option>
+                <option value='Orange Theory'>Orange Theory</option>
+                <option value='Planet Fitness'>Planet Fitness</option>
+            </select><br>
+            <input value='Other' id='Tuesday_other'>
+        </th>
+        <th>
+            <select id='Wednesday_select'>
+                <option value='Other'>Other</option>
+                <option value='24 Hour Fitness'>24 Hour Fitness</option>
+                <option value='425 Fitness'>425 Fitness</option>
+                <option value="Gold's Gym">Gold's Gym</option>
+                <option value='Orange Theory'>Orange Theory</option>
+            </select><br>
+            <input value='Other' id='Wednesday_other'>
+        </th>
+        <th>
+            <select id='Thursday_select'>
+                <option value='Other'>Other</option>
+                <option value='24 Hour Fitness'>24 Hour Fitness</option>
+                <option value='425 Fitness'>425 Fitness</option>
+                <option value="Gold's Gym">Gold's Gym</option>
+                <option value='Orange Theory'>Orange Theory</option>
+                <option value='Planet Fitness'>Planet Fitness</option>
+            </select><br>
+            <input value='Other' id='Thursday_other'>
+        </th>
+        <th>
+            <select id='Friday_select'>
+                <option value='Other'>Other</option>
+                <option value='24 Hour Fitness'>24 Hour Fitness</option>
+                <option value='425 Fitness'>425 Fitness</option>
+                <option value="Gold's Gym">Gold's Gym</option>
+                <option value='Orange Theory'>Orange Theory</option>
+                <option value='Planet Fitness'>Planet Fitness</option>
+            </select><br>
+            <input value='Other' id='Friday_other'>
+        </th>
+        <th>
+            <select id='Saturday_select'>
+                <option value='Other'>Other</option>
+                <option value='24 Hour Fitness'>24 Hour Fitness</option>
+                <option value='425 Fitness'>425 Fitness</option>
+                <option value="Gold's Gym">Gold's Gym</option>
+                <option value='Orange Theory'>Orange Theory</option>
+                <option value='Planet Fitness'>Planet Fitness</option>
+            </select><br>
+            <input value='Other' id='Saturday_other'>
+        </th>
+    </tr>
+   <tr>
+       <th>Workout Notes</th>
+        <th><input id='Sunday_notes'></th>
+        <th><input id='Monday_notes'></th>
+        <th><input id='Tuesday_notes'></th>
+        <th><input id='Wednesday_notes'></th>
+        <th><input id='Thursday_notes'></th>
+        <th><input id='Friday_notes'></th>
+        <th><input id='Saturday_notes'></th>
+   </tr>
+</table><br>
+<div class='center'><a href='/schedule'><input class='save' type='submit' value='Change Your Schedule!'></a></div><br>
+<div class='center'><a href='/friends'><input class='save' type='submit' value='Back'></a></div>
+{% endblock %}

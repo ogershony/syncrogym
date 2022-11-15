@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block main %}
+    <link rel="stylesheet" href="static/css/tips.css" />
+    <h1 class='center'>Choose a Workout</h1>
+    <div>
+        <div class='column'>
+            <h2 class='center'><u>Push (Chest, Shoulders, Triceps)</u></h2><br>
+            <a href='/tips/push'><img class='iconformat' src="static/img/push.jpg"></a>
+        </div>
+        <div class='column'>
+            <h2 class='center'><u>Pull (Back, Biceps)</u></h2><br>
+            <a href='/tips/pull'><img class='iconformat' src='static/img/pull.jpg'></a>
+        </div>
+        <div class='column'>
+            <h2 class='center'><u>Legs</u></h2><br>
+            <a href='/tips/legs'><img class='iconformat' src="static/img/legs.jpg"></a>
+        </div>
+    </div>
+    <p style='visibility:hidden'>Filler</p>
+    <div class='center'>
+        <input  class='injury' type='Submit' value='Common Injuries' onclick='window.location.href="/tips/injuries";'><br><br>
+        <input  class='injury' type='Submit' value='About Us' onclick='window.location.href="/about";'>
+    </div>
+
+{% endblock %}
