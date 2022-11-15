@@ -1,0 +1,62 @@
+.friendscontainer{
+    margin:auto;
+    width:50%;
+}
+.friend-list { 
+    display: block;
+    margin: auto;
+    padding: 0;
+    width: 600px;
+    height: 100%;
+    background: #d3d3d3;
+    list-style-type: none;
+    }
+.friend {
+    padding:10px 10px;
+    width: 600px;
+    height: 60px;
+    background: #eee9e3;
+    border-bottom: 1px solid #DDD;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    }
+.friend .name {
+    font-size: 24px;
+    }
+
+.name {
+    width: 200px;
+}
+
+.fbutton {
+    background-color: #d3d3d3;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    }
+.trashimg{
+    width:50px;
+    height:50px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+}
+.align{
+    display: flex;
+    justify-content: space-between;
+}
+.search {
+    padding: 6px;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
